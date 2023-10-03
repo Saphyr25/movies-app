@@ -1,0 +1,41 @@
+.MovieCard{
+    max-height: 25rem;
+    width: 13rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0.8rem;
+    background: #1d56a5;
+    overflow: hidden;
+    position: relative;
+    box-shadow: #000 0 5px 10px 0;
+}
+.poster img{
+    width: 15rem;
+    height: 20rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.overview{
+    transform:translateY(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1d56a5;
+    padding: 1rem;
+    margin-top: 3rem;
+    overflow: auto;
+    border-radius: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+.title_overview{
+    margin-bottom: 1rem;}
+.MovieCard:hover .overview{
+    transform: translateY(0%);
+
+}
