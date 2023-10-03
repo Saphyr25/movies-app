@@ -17,7 +17,7 @@ function App() {
       .then(data => setMovies(data.results))
   }, [])
   console.log(movies)
-
+  console.log(process.env.REACT_API_KEY)
   function GetResultSearch(name) {
     const options = {
       method: 'GET',
